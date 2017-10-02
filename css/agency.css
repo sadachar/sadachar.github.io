@@ -7,6 +7,10 @@ body {
   overflow-x: hidden;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  height: 100vh;
+}
+header {
+  height: 100%;
 }
 .text-muted {
   color: #777777;
@@ -249,10 +253,10 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/background-senior-laptop.jpeg');
+  background-image: url('../img/background-senior-laptop.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: 100% 25%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
