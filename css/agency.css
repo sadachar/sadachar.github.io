@@ -1,16 +1,7 @@
-/*!
- * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 body {
   overflow-x: hidden;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  height: 100vh;
-}
-header {
-  height: 100%;
 }
 .text-muted {
   color: #777777;
@@ -253,10 +244,10 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/background-senior-laptop-edited.jpg');
+  background-image: url('../img/background-senior-laptop.jpeg');
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: 100% 25%;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -287,8 +278,6 @@ header .intro-text .intro-heading {
   padding: 15px 20px;
   margin-top: 10px;
 }
-
-
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 300px;
@@ -386,6 +375,139 @@ START: Mission Section
   margin: 15px 0;
   text-transform: none;
   line-height: 1.5;
+}
+
+.problem-statistic {
+display: inline-block;
+margin-top: 5em;
+text-align: center;
+line-height: 1.25;
+font-weight: 400;
+}
+.solution-heading {
+  margin: 15px 0;
+  text-transform: none;
+  line-height: 1.5;
+}
+
+.problem-statistic {
+display: inline-block;
+margin-top: 5em;
+text-align: center;
+}
+.wifi-symbol {
+  display: none;
+}
+.wifi-symbol [foo], .wifi-symbol {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-top: -25px;
+  -ms-transform: rotate(-45deg) translate(-100px);
+  -moz-transform: rotate(-45deg) translate(-100px);
+  -o-transform: rotate(-45deg) translate(-100px);
+  -webkit-transform: rotate(-45deg) translate(-100px);
+  transform: rotate(-45deg) translate(-100px);
+}
+.wifi-symbol .wifi-circle {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 21.42857px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1em 1em 0 0;
+  -webkit-border-radius: 0 100% 0 0;
+  border-radius: 0 100% 0 0;
+  opacity: 0;
+  -o-animation: wifianimation 5s infinite;
+  -moz-animation: wifianimation 5s infinite;
+  -webkit-animation: wifianimation 5s infinite;
+  animation: wifianimation 5s infinite;
+}
+.wifi-symbol .wifi-circle.first {
+  -o-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms;
+}
+.wifi-symbol .wifi-circle.second {
+  width: 5em;
+  height: 5em;
+  -o-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms;
+}
+.wifi-symbol .wifi-circle.third {
+    width: 3em;
+    height: 3em;
+    opacity: 0.55;
+    -o-animation:none;
+    -moz-animation:none;
+    -webkit-animation:none;
+    animation:none;
+}
+.wifi-symbol .wifi-circle.fourth {
+  width: 1em;
+  height: 1em;
+  opacity: 1;
+  background-color: #ffc;
+  -o-animation: none;
+  -moz-animation: none;
+  -webkit-animation: none;
+  animation: none;
+}
+@-o-keyframes wifianimation {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opactiy: 1;
+  }
+  6% {
+    opactiy: 0.1;
+  }
+  100% {
+    opactiy: 0.1;
+  }
+}
+@-moz-keyframes wifianimation {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opactiy: 1;
+  }
+  6% {
+    opactiy: 0.1;
+  }
+  100% {
+    opactiy: 0.1;
+  }
+}
+@-webkit-keyframes wifianimation {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opactiy: 1;
+  }
+  6% {
+    opactiy: 0.1;
+  }
+  100% {
+    opactiy: 0.1;
+  }
 }
 
 /****************
@@ -625,6 +747,7 @@ END: Mission Section
   }
 }
 .team-member {
+ 
   text-align: center;
   margin-bottom: 50px;
 }
@@ -640,10 +763,24 @@ END: Mission Section
 .team-member p {
   margin-top: 0;
 }
-aside.clients img {
-  max-height: 150px;
+section#featured-on img {
   margin: 50px auto;
+  vertical-align: center;
 }
+
+@media (max-width: 768px) {
+  section#featured-on img {
+    max-width: 75%;
+  }
+}
+
+#kjzz {
+  width: 175px;
+}
+.yellow-text {
+  color: #fed136 !important;
+}
+
 section#contact {
   background-color: #222222;
   background-image: url('../img/map-image.png');
