@@ -641,6 +641,7 @@ END: Mission Section
   margin-top: 0;
 }
 aside.clients img {
+  max-height: 150px;
   margin: 50px auto;
 }
 section#contact {
